@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <img class="person-image" src="./src/assets/photo-header.jpg" alt="person-image" />
+        <div class="personal-information">
+          <h1 class="person-name">Dmitry Radkovets</h1>
+          <ul class="social-links">
+            <li class="header__list social-links__github">
+              <img class="social-links__img" src="./src/assets/icon-GitHub.png" alt="GitHub" />
+              <a href="https://github.com/radvam" class="header__href github__href" target="_blank"
+                >Github</a
+              >
+            </li>
+            <li class="header__list social-links__telegram">
+              <img class="social-links__img" src="./src/assets/icon-telegram.png" alt="telegram" />
+              <a href="https://t.me/dimrad1" class="header__href telegram__href" target="_blank"
+                >Telegram</a
+              >
+            </li>
+            <li class="header__list social-links__linkedin">
+              <img class="social-links__img" src="./src/assets/icon-linkedin.png" alt="linkedin" />
+              <a
+                href="https://www.linkedin.com/in/dmitry-radkovets"
+                class="header__href skype__href"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main-profile">
+        <section class="education">
+          <button type="button" class="collapsible ">
+            <p class="collapsible__education-text">Education</p>
+            <img
+              class="collapsible__education-img"
+              src="./src/assets/drop-list.svg"
+              alt="arrow down"
+            />
+          </button>
+          <div class="content">
+            <ul class="education-list">
+              <li class="education-list__item">
+                <span>2012 - 2017</span> Belarusian State University of Transport.<br />
+                Faculty of Electrotechnical
+              </li>
+              <li class="education-list__item">
+                <span>October 2018 - April 2019</span> Interactive online courses: HTML Academy
+              </li>
+              <li class="education-list__item">
+                <span>April 2019 - September 2019</span> Modern tutorial: Learn.Javascript.ru
+              </li>
+              <li class="education-list__item">
+                <span>September 2019 - present</span> Rolling-Scopes-School
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="projects">
+          <div class="projects-header">
+            <p class="project-header__text">Projects</p>
+          </div>
+          <div class="carousel">
+            <div class="carousel-container">
+              <div class="carousel__item active-slide">
+                <section class="slide-project container__project1">
+                  <button type="button" class="description__mobile">
+                    <p class="description__mobile_arrow description__mobile_arrow-left">➠</p>
+                    <p>
+                      <span class="description__mobile_name">Repair Design Project</span><br />
+                      Description<span class="description__mobile_arrow-down">➲</span>
+                    </p>
+                    <p class="description__mobile_arrow description__mobile_arrow-right">➠</p>
+                  </button>
+                  <article class="slide__description">
+                    <h6 class="slide__header project1__header">
+                      Repair Design Project
+                    </h6>
+                    <ul class="slide__list">
+                      <li>Responsive</li>
+                      <li>
+                        Browser Support: Google Chrome, Mozilla Firefox, Microsoft Edge
+                      </li>
+                      <li>Using Flexbox</li>
+                      <li>SCSS</li>
+                      <li>Desktop, mobile</li>
+                    </ul>
+                    <div class="slide__description__button">
+                      <p class="slide__description__button-text">
+                        Tap on image to see the project
+                      </p>
+                      <img
+                        class="slide__description__button-img"
+                        src="./src/assets/arrow-point-to-right.svg"
+                        alt="tap"
+                      />
+                      <img
+                        class="slide__description__button-img__down"
+                        src="./src/assets/angle-arrow-down.svg"
+                        alt="tap"
+                      />
+                    </div>
+                  </article>
+                  <section class="project__img">
+                    <a class="project__href" href="./repair.html">
+                      <img
+                        class="slide__img img__repair-design"
+                        src="./src/assets/repair-design.jpg"
+                        alt="repair-design"
+                      />
+                    </a>
+                  </section>
+                </section>
+              </div>
+              <div class="carousel__item">
+                <section class="slide-project container__project2">
+                  <button type="button" class="description__mobile">
+                    <p class="description__mobile_arrow description__mobile_arrow-left">➠</p>
+                    <p>
+                      <span class="description__mobile_name">Theyalow</span><br />
+                      Description<span class="description__mobile_arrow-down">➲</span>
+                    </p>
+                    <p class="description__mobile_arrow description__mobile_arrow-right">➠</p>
+                  </button>
+                  <article class="slide__description">
+                    <h6 class="slide__header project2__header">Theyalow</h6>
+                    <ul class="slide__list">
+                      <li>Pixel Perfect</li>
+                      <li>Browser Support: Google Chrome, Mozilla Firefox</li>
+                      <li>Interactive navbar, button and link</li>
+                      <li>Desktop, mobile</li>
+                    </ul>
+                    <div class="slide__description__button">
+                      <p class="slide__description__button-text">
+                        Tap image to see the project
+                      </p>
+                      <img
+                        class="slide__description__button-img"
+                        src="./src/assets/arrow-point-to-right.svg"
+                        alt="tap"
+                      />
+                      <img
+                        class="slide__description__button-img__down"
+                        src="./src/assets/angle-arrow-down.svg"
+                        alt="tap"
+                      />
+                    </div>
+                  </article>
+                  <section class="project__img">
+                    <a class="project__href" href="./theyalow.html">
+                      <img
+                        class="slide__img img__theyalow"
+                        src="./src/assets/THEYALOW Desktop.jpg"
+                        alt="theyallow"
+                      />
+                    </a>
+                  </section>
+                </section>
+              </div>
+            </div>
+
+            <div class="control left">
+              <img
+                class="arrow left"
+                src="./src/assets/arrow.png"
+                style="transform: rotate(180deg)"
+                alt="previous"
+              />
+            </div>
+            <div class="control right">
+              <img class="arrow right" src="./src/assets/arrow.png" alt="next" />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script async type="text/javascript" src="./src/script.js"></script>
+  </body>
+</html>
