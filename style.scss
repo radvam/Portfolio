@@ -1,0 +1,447 @@
+$Lato: 'Lato', Arial, sans-serif;
+$mobile: 500px;
+$tablet: 768px;
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url('./src/assets/fonts/FuturaBookC.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  width: 100%;
+  height: 20vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #edeef0;
+  @media screen and (max-width: $mobile) {
+    height: 40vw;
+  }
+}
+.main-profile {
+  display: flex;
+  flex-direction: column;
+  background-color: #edeef0;
+}
+.person-image {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  @media screen and (max-width: $mobile) {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+.personal-information {
+  margin-left: 3vw;
+  text-align: center;
+  @media screen and (max-width: $mobile) {
+    margin-left: 1vw;
+  }
+}
+.person-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.6vw;
+  line-height: 4vw;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: 'FuturaBookC';
+  color: #043846;
+  @media screen and (max-width: $mobile) {
+    font-size: 5.6vw;
+    line-height: 8vw;
+    padding-top: 4%;
+  }
+}
+.social-links {
+  padding-top: 4%;
+  display: flex;
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 10%;
+  }
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  margin-right: 2vw;
+  list-style: none;
+  font-size: 1.4vw;
+  line-height: 3vw;
+  font-family: 'FuturaBookC';
+  font-weight: 500;
+  padding-bottom: 5px;
+  @media screen and (max-width: $mobile) {
+    font-size: 3.8vw;
+    line-height: 6vw;
+  }
+  .social-links__img {
+    margin-right: 5%;
+    width: 3vw !important;
+    height: 3vw !important;
+    border-radius: 50%;
+    flex-shrink: 0;
+    @media screen and (max-width: $mobile) {
+      width: 5vw !important;
+      height: 5vw !important;
+    }
+  }
+}
+
+.header__href {
+  text-decoration: none;
+  color: #000000;
+  &:hover {
+    color: #e3b873;
+  }
+}
+
+.education {
+  width: 93vw;
+  margin: 0 auto;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+}
+
+.collapsible {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  height: 5vw;
+  margin: 0 auto;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, 0.034);
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.024);
+  }
+  @media screen and (max-width: $mobile) {
+    height: 11vw;
+  }
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.024);
+}
+.collapsible__education-text {
+  margin-left: 6.8%;
+  font-size: 2vw;
+  line-height: 2vw;
+  font-family: $Lato;
+  color: #043846;
+  @media screen and (max-width: $mobile) {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+}
+.collapsible__education-img {
+  width: 2.8vw;
+  margin-right: 4vw;
+  @media screen and (max-width: $mobile) {
+    width: 5vw;
+    margin-right: 6vw;
+  }
+}
+.education-list {
+  margin-top: 2%;
+  margin-left: 12%;
+  font-size: 1.4vw;
+  line-height: 3.5vw;
+  font-family: $Lato;
+  color: rgb(57, 57, 57);
+  &__item {
+    span {
+      font-weight: bold;
+      margin-right: 1%;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+}
+.content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.projects {
+  width: 90vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.projects-header {
+  display: flex;
+  align-items: center;
+  height: 5vw;
+  margin: 0 auto;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, 0.034);
+  @media screen and (max-width: $mobile) {
+    height: 10vw;
+  }
+}
+.project-header__text {
+  margin-left: 7%;
+  font-size: 2vw;
+  line-height: 2vw;
+  font-family: $Lato;
+  color: #043846;
+  @media screen and (max-width: $mobile) {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+}
+
+.slide-project {
+  display: flex;
+  margin: 0 auto;
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.slide__description {
+  margin-top: 3vw;
+  margin-left: 3vw;
+  @media screen and (max-width: $mobile) {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+}
+.slide__header {
+  font-size: 2.2vw;
+  line-height: 3vw;
+  font-family: 'FuturaBookC';
+  color: rgb(57, 57, 57);
+  @media screen and (max-width: $mobile) {
+    font-size: 5vw;
+    line-height: 8vw;
+  }
+}
+.slide__list {
+  margin-left: 3vw;
+  font-size: 1.5vw;
+  line-height: 3vw;
+  font-family: $Lato;
+  color: rgb(57, 57, 57);
+  @media screen and (max-width: $mobile) {
+    margin-left: 5vw;
+    font-size: 4vw;
+    line-height: 8vw;
+  }
+}
+.slide__img {
+  width: 50vw;
+  height: 70vw;
+  margin-top: 3vw;
+  margin-left: 3vw;
+  @media screen and (max-width: $mobile) {
+    width: 87vw;
+    height: 127vw;
+    margin: 0 auto;
+  }
+}
+.slide__description__button {
+  display: flex;
+  align-items: center;
+  width: 20vw;
+  height: 7vw;
+  margin-top: 14vw;
+  margin-left: 13vw;
+  @media screen and (max-width: $mobile) {
+    width: 40vw;
+    height: 12vw;
+    margin-top: 5vw;
+  }
+}
+.slide__description__button-text {
+  width: 15vw;
+  font-size: 1.4vw;
+  line-height: 1.8vw;
+  font-family: $Lato;
+  color: rgb(57, 57, 57);
+  @media screen and (max-width: $mobile) {
+    width: 40vw;
+    font-size: 3.4vw;
+    line-height: 3.8vw;
+  }
+}
+.slide__description__button-img {
+  width: 2vw;
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+.slide__description__button-img__down {
+  display: none;
+  @media screen and (max-width: $mobile) {
+    display: inline;
+    width: 4vw;
+    margin-left: 2vw;
+  }
+}
+.description__mobile {
+  display: none;
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 20vw;
+    margin: 3vw auto;
+    border-radius: 10vw;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    font-size: 4.5vw;
+    line-height: 9vw;
+    font-family: $Lato;
+    color: #15212c;
+    text-align: center;
+    &_arrow {
+      color: #bdb8b2;
+      font-size: 12vw;
+      opacity: 0.3;
+    }
+    &_arrow-left {
+      transform: rotate(180deg);
+    }
+    &_arrow-down {
+      display: inline-block;
+      font-size: 6vw;
+      transform: rotate(90deg);
+      margin-left: 2vw;
+    }
+    &_name {
+      font-weight: bold;
+      color: #e3b873;
+    }
+  }
+}
+.description__mobile-img {
+  width: 4vw;
+  margin-left: 2vw;
+}
+
+.carousel {
+  width: 100%;
+  @media screen and (max-width: $mobile) {
+    height: 100%;
+  }
+}
+.carousel__item {
+  display: none;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  animation: 0.5s ease-in-out;
+  @media screen and (max-width: $mobile) {
+    height: 100%;
+  }
+}
+.active-slide,
+.next-slide {
+  display: block;
+}
+.next-slide {
+  position: absolute;
+  top: 35.2vw;
+  width: 100%;
+  height: 100%;
+  @media screen and (max-width: $mobile) {
+    top: 66.5vw;
+  }
+}
+.control {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: absolute;
+  top: 40vw;
+  height: auto;
+  bottom: 0;
+  width: 4vw;
+  cursor: pointer;
+  @media screen and (max-width: $mobile) {
+    top: 73.5vw;
+  }
+}
+.control.left {
+  left: 2px;
+  right: auto;
+}
+.control.right {
+  right: 2px;
+  left: auto;
+}
+.arrow {
+  padding: 30vw 0;
+  width: 4vw;
+  &:hover {
+    background-clip: content-box;
+    border-radius: 50%;
+    background-color: #23a8d0;
+  }
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.to-left {
+  animation-name: left;
+}
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+.from-right {
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.main {
+  width: 100%;
+  background-color: rgba(234, 255, 44, 0.136);
+}
+.iframe-container {
+  display: none;
+  width: 38vw;
+  height: 1000px;
+}

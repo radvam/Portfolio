@@ -1,0 +1,80 @@
+.page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  overflow-x: hidden;
+  background: white;
+}
+
+.frame {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 81%;
+  background: #fff;
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &.theyalow {
+      height: 1849px;
+    }
+    &.rdp {
+      height: 10154.6px;
+    }
+  }
+}
+
+.control-panel {
+  position: fixed;
+  top: 68%;
+  right: 4%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 150px;
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 50px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 100%;
+    font-weight: 600;
+    color: #e3b873;
+    text-decoration: none;
+    text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    outline: none;
+    border-radius: 7px;
+    background: linear-gradient(rgb(110, 112, 120), rgb(81, 81, 86)) rgb(110, 112, 120);
+    box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5),
+      0 0 1px 1px rgba(0, 1, 6, 0.2);
+    transition: 0.2s ease-in-out;
+    &:active {
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset, 0 2px 3px rgba(0, 0, 0, 0.5) inset,
+        0 1px 1px rgba(255, 255, 255, 0.1);
+    }
+    &:hover {
+      color: rgba(20, 186, 236, $alpha: 0.8);
+    }
+  }
+}
+
+.back__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #e3b873;
+  &:hover {
+    color: rgba(20, 186, 236, $alpha: 0.8);
+  }
+}
